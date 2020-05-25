@@ -1,21 +1,46 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import ReactGA from 'react-ga'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import ButtonLink from '../components/ButtonLink'
+import Layout from '../components/Layout'
+import SEO from '../components/Seo'
+import GridTemplate from '../components/GridTemplate'
+import BlogList from '../components/BlogList'
+import Author from '../components/Author'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const trackLanguageClick = () => {
+  ReactGA.event({
+    category: 'Home',
+    action: 'click',
+    label: `Home - Go to english`
+  })
+}
+
+const IndexPage = () => {
+  return ( <
+    Layout >
+    <
+    SEO title = 'Home' / >
+    <
+    GridTemplate >
+    <
+    ButtonLink to = "/en/"
+    title = "View in english"
+    onClick = {
+      () => trackLanguageClick()
+    } >
+    View in english <
+    /ButtonLink>
+
+    <
+    Author / >
+    <
+    BlogList / >
+    <
+    /GridTemplate>  <
+    /
+    Layout >
+  )
+}
 
 export default IndexPage

@@ -2,7 +2,7 @@ backend:
   name: github
   repo: danilocordeiro/danilo-portifolio-blog
   branch: master
-  #site_domain: felipefialho.com
+  #site_domain: danilocordeiro.dev
 
 media_folder: static/assets/posts
 public_folder: assets
