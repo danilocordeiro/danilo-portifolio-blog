@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const Footer = styled.footer.attrs({
-  'role': 'dialog',
+  role: "dialog",
 })`
   align-items: center;
   background-color: var(--bgSolid);
@@ -21,4 +21,3 @@ export const Footer = styled.footer.attrs({
   right: 0;
   z-index: ${V.ZIndex.footer};
 `
-

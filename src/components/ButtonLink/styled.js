@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import styled from "styled-components"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import * as T from 'styles/typography'
+import * as T from "../../styles/typography"
 
 export const ButtonLink = styled(AniLink)`
   ${T.Link}

@@ -1,12 +1,12 @@
-import styled from 'styled-components'
-import Img from 'gatsby-image'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import Img from "gatsby-image"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const Avatar = styled(Img).attrs({
-  alt: 'Felipe Fialho',
-  'aria-label': 'Felipe Fialho'
+  alt: "Danilo Cordeiro",
+  "aria-label": "Danilo Cordeiro",
 })`
   border-radius: 50%;
   display: block;
@@ -14,7 +14,7 @@ export const Avatar = styled(Img).attrs({
   object-fit: cover;
   width: ${V.Space.md};
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan("medium")`
     height: ${V.Space.lg};
     width: ${V.Space.lg};
   `}

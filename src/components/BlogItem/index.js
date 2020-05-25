@@ -1,19 +1,19 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ReactGA from 'react-ga'
+import React from "react"
+import PropTypes from "prop-types"
+import ReactGA from "react-ga"
 
-import { getActiveTheme } from 'utils/themes'
-import DateTime from 'components/DateTime'
-import BoxHandler from 'components/BoxHandler'
-import Tags from 'components/Tags'
+import { getActiveTheme } from "../../utils/themes"
+import DateTime from "../DateTime"
+import BoxHandler from "../BoxHandler"
+import Tags from "../Tags"
 
-import * as S from './styled'
+import * as S from "./styled"
 
 const trackClick = ({ item, label }) => {
   ReactGA.event({
-    category: 'Blog',
-    action: 'click',
-    label: `${label || 'Blog List'} - Go to ${item}`
+    category: "Blog",
+    action: "click",
+    label: `${label || "Blog List"} - Go to ${item}`,
   })
 }
 
@@ -24,7 +24,7 @@ const BlogItem = ({
   title,
   tags,
   description,
-  isMini
+  isMini,
 }) => {
   return (
     <S.BlogItem
@@ -34,23 +34,18 @@ const BlogItem = ({
       duration={1}
       title={title}
       bg={getActiveTheme()}
-      onClick={() => trackClick(title)}>
+      onClick={() => trackClick(title)}
+    >
       <BoxHandler>
         {date && (
           <DateTime>
             {date}
-            {timeToRead && (
-              <span> · Leitura de {timeToRead} min</span>
-            )}
+            {timeToRead && <span> · Leitura de {timeToRead} min</span>}
           </DateTime>
         )}
         <S.Title isMini={isMini}>{title}</S.Title>
-        {description && (
-          <S.Subtitle>{description}</S.Subtitle>
-        )}
-        {tags && (
-          <Tags tags={tags} />
-        )}
+        {description && <S.Subtitle>{description}</S.Subtitle>}
+        {tags && <Tags tags={tags} />}
       </BoxHandler>
     </S.BlogItem>
   )
@@ -63,7 +58,7 @@ BlogItem.propTypes = {
   timeToRead: PropTypes.number,
   tags: PropTypes.array,
   description: PropTypes.string,
-  isMini: PropTypes.bool
+  isMini: PropTypes.bool,
 }
 
 export default BlogItem

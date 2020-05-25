@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import * as V from 'styles/variables'
-import * as T from 'styles/typography'
+import * as V from "../../styles/variables"
+import * as T from "../../styles/typography"
 
 export const PostFooter = styled.div`
   ${T.Text1}
@@ -15,8 +15,8 @@ export const PostFooterContent = styled.div`
   position: relative;
 
   &:after {
-    border-top: ${V.Border.default}; 
-    content: '';
+    border-top: ${V.Border.default};
+    content: "";
     left: 20%;
     position: absolute;
     right: 20%;

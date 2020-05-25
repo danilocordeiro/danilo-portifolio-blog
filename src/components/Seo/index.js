@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import PropTypes from "prop-types"
+import Helmet from "react-helmet"
+import { useStaticQuery, graphql } from "gatsby"
 
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
@@ -26,7 +26,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImage = image || 'https://felipefialho.com/assets/og-image.jpg'
+  const ogImage = image || "https://danilocordeiro.dev/assets/og-image.jpg"
 
   return (
     <Helmet
@@ -38,40 +38,40 @@ function SEO({ description, lang, meta, title, image }) {
       meta={[
         {
           name: `description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:image`,
-          content: ogImage
+          content: ogImage,
         },
         {
           property: `og:title`,
-          content: `${title} | ${site.siteMetadata.title}`
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: `og:description`,
-          content: metaDescription
+          content: metaDescription,
         },
         {
           property: `og:type`,
-          content: `website`
+          content: `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary_large_image`
+          content: `summary_large_image`,
         },
         {
           name: `twitter:image`,
-          content: ogImage
+          content: ogImage,
         },
         {
           name: `twitter:title`,
-          content: `${title} | ${site.siteMetadata.title}`
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
-          content: metaDescription
-        }
+          content: metaDescription,
+        },
       ].concat(meta)}
     />
   )

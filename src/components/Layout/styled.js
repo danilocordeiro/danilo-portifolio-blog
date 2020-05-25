@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const Layout = styled.section`
   background-color: var(--bg);
@@ -11,7 +11,7 @@ export const Layout = styled.section`
 `
 
 export const Main = styled.main.attrs({
-  role: 'main',
+  role: "main",
 })`
   margin-bottom: ${V.Height.footer};
   margin-top: ${V.Height.headerSm};
@@ -20,7 +20,7 @@ export const Main = styled.main.attrs({
   padding-top: ${V.Height.mainTop};
   width: 100%;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan("medium")`
     margin-top: ${V.Height.headerLg};
   `}
 `

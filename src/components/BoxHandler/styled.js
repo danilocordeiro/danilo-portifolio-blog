@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const BoxHandler = styled.article`
   border: ${V.Border.box};
@@ -15,14 +15,14 @@ export const BoxHandler = styled.article`
   position: relative;
   will-change: border-color;
 
-  ${media.greaterThan('medium')`
+  ${media.greaterThan("medium")`
     padding: ${V.Space.default};
   `}
 
   &:after,
   &:before {
     bottom: 0;
-    content: '';
+    content: "";
     left: 0;
     position: absolute;
     right: 0;
@@ -44,11 +44,11 @@ export const BoxHandler = styled.article`
 
   &:hover {
     &:before {
-      transform: scaleY(1)
+      transform: scaleY(1);
     }
 
     &:after {
-      transform: scaleX(1)
+      transform: scaleX(1);
     }
   }
 `

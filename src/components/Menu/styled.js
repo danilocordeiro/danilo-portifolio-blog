@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
-import * as T from 'styles/typography'
+import * as V from "../../styles/variables"
+import * as T from "../../styles/typography"
 
 export const Menu = styled.nav`
   display: flex;
@@ -15,14 +15,14 @@ export const Menu = styled.nav`
     font-size: 1.7rem;
     font-weight: 600;
     height: ${V.Height.headerSm};
-    letter-spacing: .05rem;
+    letter-spacing: 0.05rem;
     padding-left: ${V.Space.xs};
     padding-right: ${V.Space.xs};
     text-decoration: none;
     transition: color ${V.Transition.default};
     will-change: color;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       ${T.LinkTransition}
 
       &:after {

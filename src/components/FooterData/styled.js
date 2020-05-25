@@ -1,6 +1,6 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const FooterData = styled.aside`
   bottom: ${V.Height.footer};
@@ -19,7 +19,7 @@ export const FooterData = styled.aside`
     }
 
     &:before {
-      content: '•';
+      content: "•";
       display: inline-block;
       margin: 0 ${V.Space.xxs};
     }

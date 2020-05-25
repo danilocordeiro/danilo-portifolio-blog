@@ -1,10 +1,12 @@
 import styled from 'styled-components'
-import { Algolia } from 'styled-icons/fa-brands/Algolia'
+import {
+  Algolia
+} from 'styled-icons/fa-brands'
 
-import * as V from 'styles/variables'
-import * as T from 'styles/typography'
+import * as V from '../../styles/variables'
+import * as T from '../../styles/typography'
 
-export const Search = styled.section`
+export const Search = styled.section `
   display: block;
 
   .ais {
@@ -90,7 +92,7 @@ export const Search = styled.section`
   }
 `
 
-export const Title = styled.h1`
+export const Title = styled.h1 `
   ${T.Text2}
   align-items: center;
   color: var(--secondaryColor);
@@ -100,7 +102,8 @@ export const Title = styled.h1`
   padding-top: ${V.Space.sm};
 `
 
-export const AlgoliaIcon = styled(Algolia)`
+export const AlgoliaIcon = styled(Algolia)
+`
   height: ${V.Space.sm};
   margin-left: ${V.Space.xxs};
   width: ${V.Space.sm};

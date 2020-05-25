@@ -1,8 +1,8 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
-import * as T from 'styles/typography'
+import * as V from "../../styles/variables"
+import * as T from "../../styles/typography"
 
 export const Content = styled.article`
   ${T.Text1}
@@ -116,7 +116,7 @@ export const Content = styled.article`
       font-size: 1.8rem;
       padding-left: ${V.Space.default};
 
-      ${media.lessThan('medium')`
+      ${media.lessThan("medium")`
         border-radius: 0;
         font-size: 1.6rem;
         margin-left: -${V.Space.sm};

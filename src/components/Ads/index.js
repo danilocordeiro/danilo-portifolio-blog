@@ -5,28 +5,25 @@ import * as S from './styled'
 const GoogleAds = ({
   slot,
   layout = 'image'
-}) => ( <
-  >
-  <
-  S.AdsGoogle > {
-    layout === 'image' ? ( <
-      ins className = 'adsbygoogle'
+}) => ( < >
+  <S.AdsGoogle> {
+    layout === 'image' ? ( 
+    <ins className = 'adsbygoogle'
       style = {
         {
           display: 'block'
         }
       }
       data - adtest = {
-        process.env.NODE_ENV !== 'production'
+        process.env.NODE_ENV !== 'production' 
       }
       data - ad - client = 'ca-pub-8323225338546238'
       data - ad - slot = {
         slot
       }
       data - ad - format = 'auto'
-      data - full - width - responsive = 'true' > < /ins>
-    ) : ( <
-      ins className = 'adsbygoogle'
+      data - full - width - responsive = 'true' > </ins>
+    ) : ( <ins className = 'adsbygoogle'
       style = {
         {
           display: 'block',
@@ -41,11 +38,9 @@ const GoogleAds = ({
       data - ad - client = 'ca-pub-8323225338546238'
       data - ad - slot = {
         slot
-      } > < /ins>
+      } > </ins>
     )
-  } <
-  /S.AdsGoogle> <
-  />
+  } </S.AdsGoogle>
 )
 
 export default GoogleAds

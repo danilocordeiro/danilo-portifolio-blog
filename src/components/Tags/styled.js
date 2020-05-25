@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { Tag } from 'styled-icons/boxicons-regular/Tag'
+import styled from "styled-components"
+import { Tag } from "styled-icons/boxicons-regular"
 
-import * as V from 'styles/variables'
+import * as V from "../../styles/variables"
 
 export const Tags = styled.div`
   align-items: center;
@@ -39,7 +39,7 @@ export const TagHolder = styled.span`
     margin-right: ${V.Space.xxs};
 
     &:after {
-      content: ', ';
+      content: ", ";
       height: 3rem;
     }
   }
@@ -49,7 +49,7 @@ export const TagItem = styled.span`
   align-items: center;
   display: inline-flex;
   font-size: 1.3rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   text-transform: lowercase;
   vertical-align: top;
 `
@@ -59,4 +59,3 @@ export const TagIcon = styled(Tag)`
   margin-right: ${V.Space.xs};
   width: ${V.Space.sm};
 `
-

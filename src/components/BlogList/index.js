@@ -1,17 +1,17 @@
-import React from 'react'
-import ReactGA from 'react-ga'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from "react"
+import ReactGA from "react-ga"
+import { useStaticQuery, graphql } from "gatsby"
 
-import ButtonLink from 'components/ButtonLink'
-import BlogItem from 'components/BlogItem'
+import ButtonLink from "../ButtonLink"
+import BlogItem from "../BlogItem"
 
-import * as S from './styled'
+import * as S from "./styled"
 
 const trackClickAllPosts = () => {
   ReactGA.event({
-    category: 'Blog',
-    action: 'click',
-    label: `Blog - Click to view all posts`
+    category: "Blog",
+    action: "click",
+    label: `Blog - Click to view all posts`,
   })
 }
 
@@ -31,7 +31,7 @@ const blogListQuery = graphql`
             description
             title
             tags
-          },
+          }
           timeToRead
         }
       }
@@ -45,8 +45,9 @@ const BlogList = () => {
 
   return (
     <S.BlogList>
-      <S.Title>Últimas do blog</S.Title>
+      <S.Title> Últimas do blog </S.Title>{" "}
       <S.Nav>
+        {" "}
         {list.map(({ node }, i) => (
           <BlogItem
             key={i}
@@ -57,11 +58,11 @@ const BlogList = () => {
             tags={node.frontmatter.tags}
             timeToRead={node.timeToRead}
           />
-        ))}
-      </S.Nav>
-      <ButtonLink to='/blog/' onClick={() => trackClickAllPosts()}>
-        Ver todos os posts
-      </ButtonLink>
+        ))}{" "}
+      </S.Nav>{" "}
+      <ButtonLink to="/blog/" onClick={() => trackClickAllPosts()}>
+        Ver todos os posts{" "}
+      </ButtonLink>{" "}
     </S.BlogList>
   )
 }

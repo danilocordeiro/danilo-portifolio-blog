@@ -1,11 +1,11 @@
-import styled from 'styled-components'
-import media from 'styled-media-query'
+import styled from "styled-components"
+import media from "styled-media-query"
 
-import * as V from 'styles/variables'
-import * as T from 'styles/typography'
+import * as V from "../../styles/variables"
+import * as T from "../../styles/typography"
 
 export const PostNav = styled.nav`
-  ${media.greaterThan('small')`
+  ${media.greaterThan("small")`
     display: flex;
     justify-content: space-between;
   `}
@@ -26,13 +26,13 @@ export const Title = styled.h2`
 export const NavItem = styled.div`
   display: block;
 
-  ${media.lessThan('small')`
+  ${media.lessThan("small")`
     &:not(:last-child) {
       margin-bottom: ${V.Space.default};
     }
   `}
 
-  ${media.greaterThan('small')`
+  ${media.greaterThan("small")`
     max-width: calc(50% - ${V.Space.xs});
     width: 50%;
 

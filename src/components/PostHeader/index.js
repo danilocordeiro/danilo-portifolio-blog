@@ -1,23 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
-import Tags from 'components/Tags'
-import DateTime from 'components/DateTime'
-import ButtonLink from 'components/ButtonLink'
-import * as R from 'components/Responsive'
+import Tags from "../Tags"
+import DateTime from "../DateTime"
+import ButtonLink from "../ButtonLink"
+import * as R from "../Responsive"
 
-import * as S from './styled'
+import * as S from "./styled"
 
-const PostHeader = ({ 
-  image, 
-  tags, 
-  date, 
-  timeToRead, 
-  title, 
-  description 
-}) => {
+const PostHeader = ({ image, tags, date, timeToRead, title, description }) => {
   return (
-    <S.PostHeader> 
+    <S.PostHeader>
       {image && (
         <R.GreaterThanTablet>
           <div>
@@ -32,9 +25,7 @@ const PostHeader = ({
       </S.ButtonBack>
       <DateTime>
         <span itemProp="datePublished">{date}</span>
-        {timeToRead && (
-          <span> · Leitura de {timeToRead} min</span>
-        )}
+        {timeToRead && <span> · Leitura de {timeToRead} min</span>}
       </DateTime>
       <S.Title>{title}</S.Title>
       <S.Subtitle>{description}</S.Subtitle>
@@ -50,7 +41,7 @@ PostHeader.propTypes = {
   description: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   image: PropTypes.object,
-  timeToRead: PropTypes.number
+  timeToRead: PropTypes.number,
 }
 
 export default PostHeader

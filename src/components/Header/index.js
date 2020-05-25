@@ -1,18 +1,18 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import React from "react"
+import PropTypes from "prop-types"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-import { getActiveTheme } from 'utils/themes'
+import { getActiveTheme } from "../../utils/themes"
 
-import Avatar from 'components/Avatar'
-import Menu from 'components/Menu'
-import Container from 'components/Container'
-import LightButton from 'components/LightButton'
-import * as R from 'components/Responsive'
+import Avatar from "../Avatar"
+import Menu from "../Menu"
+import Container from "../Container"
+import LightButton from "../LightButton"
+import * as R from "../Responsive"
 
-import * as S from './styled'
+import * as S from "./styled"
 
-const Header = ({ site: { author }}) => {
+const Header = ({ site: { author } }) => {
   return (
     <S.Header>
       <Container>
@@ -23,7 +23,8 @@ const Header = ({ site: { author }}) => {
             direction="down"
             duration={1}
             to="/"
-            title="Voltar para home">
+            title="Voltar para home"
+          >
             <S.Brand>
               <Avatar />
               <R.LessThanSmallMobile>
@@ -46,8 +47,8 @@ const Header = ({ site: { author }}) => {
 
 Header.propTypes = {
   site: PropTypes.shape({
-    author: PropTypes.string.isRequired
-  })
+    author: PropTypes.string.isRequired,
+  }),
 }
 
 export default Header
