@@ -1,14 +1,14 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import ReactGA from 'react-ga'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import ReactGA from "react-ga"
 
-import * as S from './styled'
+import * as S from "./styled"
 
-const trackClick = (item) => {
+const trackClick = item => {
   ReactGA.event({
-    category: 'Social',
-    action: 'click',
-    label: `Social - ${item}`
+    category: "Social",
+    action: "click",
+    label: `Social - ${item}`,
   })
 }
 
@@ -33,29 +33,19 @@ const Social = () => {
 
   return (
     <S.Social>
-      <S.SocialItem 
-        href={site.siteMetadata.social.twitterLink} 
-        title="Twitter" 
-        onClick={() => trackClick('Twitter')}>
-        <S.SocialTwitter />
-      </S.SocialItem>
-      <S.SocialItem 
-        href={site.siteMetadata.social.githubLink} 
+      <S.SocialItem
+        href={site.siteMetadata.social.githubLink}
         title="Github"
-        onClick={() => trackClick('Github')} >
+        onClick={() => trackClick("Github")}
+      >
         <S.SocialGithub />
       </S.SocialItem>
-      <S.SocialItem 
-        href={site.siteMetadata.social.linkedinLink} 
+      <S.SocialItem
+        href={site.siteMetadata.social.linkedinLink}
         title="LinkedIn"
-        onClick={() => trackClick('LinkedIn')}>
+        onClick={() => trackClick("LinkedIn")}
+      >
         <S.SocialLinkedin />
-      </S.SocialItem>
-      <S.SocialItem 
-        href={site.siteMetadata.social.codepenLink} 
-        title="Codepen"
-        onClick={() => trackClick('Codepen')}>
-        <S.SocialCodepen />
       </S.SocialItem>
     </S.Social>
   )

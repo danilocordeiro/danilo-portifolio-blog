@@ -206,17 +206,17 @@ if (process.env.CONTEXT === "production") {
 
 module.exports = {
   siteMetadata: {
-    title: `Felipe Fialho - Front-end Developer`,
-    author: `Felipe Fialho`,
-    position: "Front-end Developer",
-    description: `Site pessoal e blog de um desenvolvedor Front-end apaixonado por criar coisas e compartilhar boas idéias.`,
-    descriptionEn: `Personal website of a Front End developer passionate about create things and sharing good ideas.`,
-    siteUrl: `https://felipefialho.com/`,
+    title: `Danilo Cordeiro - Back-end Developer`,
+    author: `Danilo Cordeiro`,
+    position: "Back-end Developer",
+    description: `Site pessoal e blog de um desenvolvedor Back-end apaixonado por criar coisas e compartilhar boas idéias.`,
+    descriptionEn: `Personal website of a Back-end developer passionate about create things and sharing good ideas.`,
+    siteUrl: `https://danilocordeiro.dev/`,
     social: {
       twitter: `felipefialho_`,
       twitterLink: `https://twitter.com/felipefialho_`,
-      linkedinLink: `https://www.linkedin.com/in/felipefialho/`,
-      githubLink: `https://github.com/felipefialho`,
+      linkedinLink: `https://linkedin.com/in/danilo-cordeiro-8456a744`,
+      githubLink: `https://github.com/danilocordeiro`,
       codepenLink: `https://codepen.io/felipefialho`,
       mediumLink: `https://medium.com/@felipefialho`,
     },
