@@ -161,8 +161,8 @@ const plugins = [
   {
     resolve: `gatsby-plugin-manifest`,
     options: {
-      name: `Felipe Fialho`,
-      short_name: `felipefialho.com`,
+      name: `Danilo Cordeiro`,
+      short_name: `danilocordeiro.dev`,
       start_url: `/`,
       background_color: `#fcfcfc`,
       theme_color: `#111111`,
