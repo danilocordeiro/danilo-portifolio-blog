@@ -3,7 +3,7 @@ slug: "/oioioi"
 title: "Design System, Venice e as peças do Lego"
 date: 2020-05-19 00:00:01
 description: "Contando mais sobre a arquitetura, o desenvolvimento e as tecnologias utilizadas no Venice, o Design System da Juntos Somos Mais."
-image: /assets/2020-05-19-cover.jpg
+image: assets/2020-05-19-cover.jpg
 tags: ["design system", "css", "typescript", "react", "vue"]
 ---
 
