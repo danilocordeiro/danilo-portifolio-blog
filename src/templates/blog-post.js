@@ -24,8 +24,8 @@ const BlogPost = props => {
         description={post.frontmatter.description}
         image={
           post.frontmatter.image
-            ? `https://danilocordeiro.dev${post.frontmatter.image.publicURL}`
-            : "https://danilocordeiro.dev/assets/og-image.jpg"
+            ? `https://felipefialho.com${post.frontmatter.image.publicURL}`
+            : "https://felipefialho.com/assets/og-image.jpg"
         }
       />
       <GridTemplate>
